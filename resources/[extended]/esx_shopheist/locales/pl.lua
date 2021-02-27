@@ -1,0 +1,16 @@
+Locales['pl'] = {
+  ['shop_robbery'] = 'Tienda robable',
+  ['press_to_rob'] = 'presiona ~INPUT_CONTEXT~ para ~o~robar~s~ ~b~%s~s~',
+  ['robbery_timer'] = 'Robo de la tienda: ~r~%s~s~ segundos restantes!',
+  ['recently_robbed'] = 'Esta tienda ha sido recientemente robada. Por favor espera ~y~%s~s~ segundos, hasta poder robarla de nuevo!',
+  ['rob_in_prog'] = '~r~Robo en progreso en~b~%s~s~',
+  ['started_to_rob'] = 'Has iniciado un robo ~y~%s~s~',
+  ['alarm_triggered'] = 'la alarma ha saltado!',
+  ['robbery_complete'] = '~r~El robo ha sido completado con éxito~s~, has ~o~robado~s~ ~g~$%s~s~',
+  ['robbery_complete_at'] = '~r~Robo éxitoso en~y~%s~s~',
+  ['robbery_cancelled'] = 'El robo ha sido cancelado!',
+  ['robbery_cancelled_at'] = '~r~El Robo en~b~%s~s~ ha sido cancelado!',
+  ['min_police'] = 'debe haber almenos ~b~%s policias~s~ en la ciudad para poder robar.',
+  ['robbery_already'] = '~r~Ya esta teniendo lugar un robo!',
+  ['no_threat'] = 'no representas una amenaza para el encargado de la tienda.',
+}

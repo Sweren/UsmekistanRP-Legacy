@@ -1,0 +1,242 @@
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+</script>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>-->
+
+    <title>Tablette de ems</title>
+</head>
+
+<body>
+    <div class="ems-cad-main-wrapper" id="ems-cad">
+        <div class="ems-cad-inner-wrapper">
+
+            <div class="ems-cad-header">
+                <h4>Tableta EMS</h4>
+                <div class="ems-cad-close">
+                    <i class="far fa-window-close"></i>
+                </div>
+            </div>
+            <div class="ems-cad-inner-main">
+                <div class="ems-cad-left-sidebar">
+                    <ul class="ems-cad-menu">
+                        <li data-id="search-civilian">Buscar ciudadano</li>
+                        <li data-id="bolos">Notas</li>
+                    </ul>
+                    <img src="images/EMS_logo_GTA_V.png" class="ems-logo" style="margin-left: -23px;">
+                </div>
+                <div class="page-wrapper">
+                    <div id="plate-checker" class="ems-cad-content-right ems-cad-system-search-plate page">
+                        <table class="ems-cad-listings">
+                            <thead>
+                                <tr>
+                                    <td>Placa</td>
+                                    <td>Modelo</td>
+                                    <td>Nombre</td>
+                                    <td>Apellido</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="plate"></td>
+                                    <td id="model"></td>
+                                    <td id="firstname"></td>
+                                    <td id="lastname"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="plate-input-box">
+                            <input type="text" id="input-plate" class="input" name="plate-input" placeholder="Ingrese placa del vehículo">
+                        </div>
+                        <footer>
+                            <button type="submit" id="search-for-plate" class="search-button">Buscar placa</button>
+                        </footer>
+                    </div>
+                    <div id="search-civilian" class="ems-cad-content-right ems-cad-system-search-civilian page" style="overflow-y: auto">
+                        <div class="container">
+                            <div class="resultinner">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label>Buscar ciudadano</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" id="search">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" id="search-for-civilian" class="search-civilian-button btn btn-primary" style="width: 100%;">Buscar</button>
+                                    </div>
+                                </div>
+                                <table class="all-found-users">
+                                    <thead>
+                                        <tr>
+                                            <td>Nombre</td>
+                                            <td>Apellido</td>
+                                            <td>Sexo</td>
+                                            <td>Fecha de nacimiento</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                            <div class="civilian-details">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="back"><button type="submit" class="civ-back btn btn-primary">Volver</button></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="addinfo">
+                                            <button type="submit" class="add-cr pull-right btn btn-primary">Agregar entrada al archivo</button>
+                                            <button type="submit" class="add-note pull-right btn btn-primary">Agregar nota</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 firstname-label"></div>
+                                    <div class="col-md-6 firstname inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 lastname-label"></div>
+                                    <div class="col-md-6 lastname inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 sex-label"></div>
+                                    <div class="col-md-6 sex inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 dob-label"></div>
+                                    <div class="col-md-6 dob inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 height-label"></div>
+                                    <div class="col-md-6 height inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 phone-label"></div>
+                                    <div class="col-md-6 phone inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 job-label"></div>
+                                    <div class="col-md-6 job inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 jail-label"></div>
+                                    <div class="col-md-6 jail inputfield"></div>
+                                </div>
+                                <div class="row" style="padding-top:20px;">
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <div class="modal-add-record">
+                                                <span class="error-cr"></span>
+                                                <input type="hidden" id="cr-playerid" name="playerid" value="">
+                                                <input type="text" placeholder="Razón" id="cr-reason" name="reason" class="form-control">
+                                                <input type="text" placeholder="Valor" id="cr-fine" name="fine" class="form-control">
+                                                <input type="text" placeholder="Duración" id="cr-time" name="time" class="form-control">
+                                                <button class="btn btn-primary" id="save-criminal-record" style="width: 100%;">Registrar</button>
+                                            </div>
+                                            <h3>Archivo</h3>
+                                            <table id="criminal-records" class="criminal-records">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Razón</td>
+                                                        <td>Valor</td>
+                                                        <td>Dración</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                </tbody>
+                                            </table>
+                                            <span class="cr-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <h3>Licencias</h3>
+                                            <table id="licenses" class="criminal-records">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Tipo de licencia</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-12" style="padding-top:20px;">
+                                            <div class="modal-add-note">
+                                                <span class="error-no`"></span>
+                                                <input type="text" placeholder="Titre" id="note-title" name="offence" class="form-control">
+                                                <input type="text" placeholder="Contenu" id="note-content" name="offence" class="form-control">
+                                                <button class="btn btn-primary" id="save-note" style="width: 100%;">Registrar</button>
+                                            </div>
+                                            <h3>Notas</h3>
+                                            <span class="note-message"></span>
+                                            <table id="notes" class="criminal-records">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Título</td>
+                                                        <td>Contenido</td>
+                                                        <td>Creación</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bolos" class="ems-cad-content-right ems-cad-system-search-bolos page">
+                        <div style="max-height: 200px;overflow-y: auto;">
+                            <table class="ems-cad-bolos">
+                                <span class="bolo-message"></span>
+                                <thead>
+                                    <tr>
+                                        <td>Nombre</td>
+                                        <td>Apellido</td>
+                                        <td>EMS</td>
+                                        <td>Razón</td>
+                                        <td>Fecha</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="plate-input-box">
+                            <div class="col-md-12" style="padding-top:20px;">
+                                <button type="submit" class="add-bolo pull-right btn btn-primary">Agregar búsqueda</button>
+                                <div class="modal-add-bolos">
+                                    <span class="error-bolo"></span>
+                                    <input type="text" id="input-bolos-gender" class="input" name="gender" placeholder="Nombre">
+                                    <input type="text" id="input-bolos-height" class="input" name="height" placeholder="Apellido">
+                                    <input type="text" id="input-bolos-age" class="input" name="age" placeholder="Edad">
+                                    <input type="text" id="input-bolos-type-of-crime" class="input" name="type-of-crime" placeholder="Razón">
+                                    <input type="text" id="input-bolos-note" class="input" name="note" placeholder="Fecha">
+                                    <button class="btn btn-primary" id="save-bolos" style="width: 28.5%;">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

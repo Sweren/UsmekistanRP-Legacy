@@ -1,0 +1,448 @@
+<div class="group" id="brow">
+    <h2 class="header">Frente</h2>
+    <div class="slider interval">
+        <h3 class="header">Profundidad</h3>
+        <div class="valuelabel left">Dentro</div>
+        <div class="valuelabel right">Fuera</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="eyebrows_6" data-index="7">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Estatura</h3>
+        <div class="valuelabel left">Bajo</div>
+        <div class="valuelabel right">Alto</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="eyebrows_5" data-index="6">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="eyes">
+    <h2 class="header">Ojos</h2>
+    <div class="list">
+        <h3 class="header">Color</h3>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <select class="eyecolor" id="eye_color">
+                <!-- NOTE: Populated via javascript -->
+                <option value="0" selected="selected">Verde</option>
+                <option value="1">Esmeralda</option>
+                <option value="2">Azul Claro</option>
+                <option value="3">Azul oscuro</option>
+                <option value="4">Cafe Claro</option>
+                <option value="5">Cafe Oscuro</option>
+                <option value="6">Avellana </option>
+                <option value="7">Gris Oscuro</option>
+                <option value="8">Gris Claro</option>
+            </select>
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Estrabismo</h3>
+        <div class="valuelabel left">Estrecho</div>
+        <div class="valuelabel right">Amplio</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="eye_squint" data-index="11">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="nose">
+    <h2 class="header">Nariz</h2>
+    <div class="slider interval">
+        <h3 class="header">Anchura</h3>
+        <div class="valuelabel left">Estrecho</div>
+        <div class="valuelabel right">Amplio</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="nose_1" data-index="0">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Estatura</h3>
+        <div class="valuelabel left">Bajo</div>
+        <div class="valuelabel right">Alto</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="nose_2" data-index="1">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Longitud</h3>
+        <div class="valuelabel left">Corto</div>
+        <div class="valuelabel right">Largo</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="nose_3" data-index="2">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Forma del puente</h3>
+        <div class="valuelabel left">Curvado</div>
+        <div class="valuelabel right">torcido</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="nose_4" data-index="3">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Giro de puente</h3>
+        <div class="valuelabel left">Izquierda</div>
+        <div class="valuelabel right">Derecha</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="nose_6" data-index="5">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Dirección de la punta</h3>
+        <div class="valuelabel left">Abajo</div>
+        <div class="valuelabel right">Arriba</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="nose_5" data-index="4">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="cheeks">
+    <h2 class="header">Mejillas</h2>
+    <div class="slider interval">
+        <h3 class="header">Forma</h3>
+        <div class="valuelabel left">Demacrado</div>
+        <div class="valuelabel right">Hinchado</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="cheeks_3" data-index="10">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Anchura de los pómulos</h3>
+        <div class="valuelabel left">Plano</div>
+        <div class="valuelabel right">Sobresaliente</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="cheeks_2" data-index="9">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Altura de los pómulos</h3>
+        <div class="valuelabel left">Bajo</div>
+        <div class="valuelabel right">Alto</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="cheeks_1" data-index="8">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="jaw">
+    <h2 class="header">Mandíbula</h2>
+    <div class="slider interval">
+        <h3 class="header">La base de la mandíbula</h3>
+        <div class="valuelabel left">Estrecha</div>
+        <div class="valuelabel right">Amplia</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="jaw_1" data-index="13">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header"> Ángulo de la mandíbula</h3>
+        <div class="valuelabel left">Redonda</div>
+        <div class="valuelabel right">Cuadrada</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="jaw_2" data-index="14">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="chin">
+    <h2 class="header">Mentón</h2>
+    <div class="slider interval">
+        <h3 class="header">Ancho</h3>
+        <div class="valuelabel left">Punteagudo</div>
+        <div class="valuelabel right">Cuadrado</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="chin_3" data-index="17">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Longitud</h3>
+        <div class="valuelabel left">Corto</div>
+        <div class="valuelabel right">Largo</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="chin_1" data-index="15">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Alineación</h3>
+        <div class="valuelabel left">Retirada</div>
+        <div class="valuelabel right">Sobresaliente</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="chin_2" data-index="16">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+    <div class="slider interval">
+        <h3 class="header">Forma</h3>
+        <div class="valuelabel left">Redondeado</div>
+        <div class="valuelabel right">++++++</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature" id="chin_4" data-index="18">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="lips">
+    <h2 class="header">Labios</h2>
+    <div class="slider interval">
+        <h3 class="header">Plenitud de los labios</h3>
+        <div class="valuelabel left">Delgado</div>
+        <div class="valuelabel right">Completo</div>
+        <div class="controls">
+            <button class="arrow left"></button>
+            <input type="range" min="-100" max="100" class="facefeature inverted" id="lip_thickness" data-index="12">
+            <button class="arrow right"></button>
+        </div>
+    </div>
+</div>
+<div class="group" id="skin">
+    <h2 class="header">Piel</h2>
+    <div class="subgroup">
+        <div class="list">
+            <h3 class="header">Manchas</h3>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <!--
+                    NOTE:
+                    Some skin blemishes have an extra, hidden property that adds an effect to the body as well,
+                    the effect is the same for all the skin blemishes.
+
+                    Affected ones are:
+                    Cheek Rash, Face Rash, Eyesore, Chin Rash, Greasy, Acne Scarring
+
+                    In GTA Online this effect does not have an opacity and does not share it with skin blemishes,
+                    even if skin blemishes opacity is set to zero, this effect appears in full.
+                    I decided to improve on it and link the blemishes opacity slider to both effects.
+
+                    This effect is the overlay index 12 and has two variants but only one ever appears in game, 
+                    the '0' seems to be unused. Only way to disable it, is to set it to 255.
+                -->
+                <select class="headoverlayextra" id="blemishes_1" data-index="0" data-keyextra="bodyb_3" data-indexextra="12">
+                    <option value="255" data-extra="255" selected="selected">Nada</option>
+                    <option value="0"  data-extra="255">Sarampión</option>
+                    <option value="1"  data-extra="255">Espinillas</option>
+                    <option value="2"  data-extra="255">Puntos</option>
+                    <option value="3"  data-extra="255">Lastimada</option>
+                    <option value="4"  data-extra="255">Puntos negros</option>
+                    <option value="5"  data-extra="255">Build Up</option>
+                    <option value="6"  data-extra="255">Pústulas</option>
+                    <option value="7"  data-extra="255">espinillas </option>
+                    <option value="8"  data-extra="255">Full Acne</option>
+                    <option value="9"  data-extra="255">Acne</option>
+                    <option value="10" data-extra="1">Erupción en la mejilla</option>
+                    <option value="11" data-extra="1">Erupción en la cara</option>
+                    <option value="12" data-extra="255">Picker</option>
+                    <option value="13" data-extra="255">Pubertad</option>
+                    <option value="14" data-extra="1">Eyesore</option>
+                    <option value="15" data-extra="1">Chin Rash</option>
+                    <option value="16" data-extra="255">Two Face</option>
+                    <option value="17" data-extra="255">T Zone</option>
+                    <option value="18" data-extra="1">Grasa</option>
+                    <option value="19" data-extra="255">Marcado</option>
+                    <option value="20" data-extra="1">Cicatrices de acné</option>
+                    <option value="21" data-extra="255">Cicatrices de acné completas</option>
+                    <option value="22" data-extra="255">fuego en la boca</option>
+                    <option value="23" data-extra="255">Impétigo</option>
+                </select>
+                <button class="arrow right"></button>
+            </div>
+        </div>
+        <div class="slider opacity">
+            <h3 class="header">Opacidad de las manchas</h3>
+            <div class="valuelabel center">50%</div>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <input type="range" min="0" max="100" class="headoverlayextra" id="blemishes_2" data-index="0" data-keyextra="bodyb_4" data-indexextra="12">
+                <button class="arrow right"></button>
+            </div>
+        </div>
+    </div>
+    <div class="subgroup">
+        <div class="list">
+            <h3 class="header">Envejecimiento</h3>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <select class="headoverlay" id="age_1" data-index="3">
+                    <option value="255" selected="selected">Nada</option>
+                    <option value="0">Patas de gallo</option>
+                    <option value="1">Primeros signos</option>
+                    <option value="2">Edad Media</option>
+                    <option value="3">Líneas de preocupación</option>
+                    <option value="4">Depresión</option>
+                    <option value="5">Distinguido</option>
+                    <option value="6">Envejecido</option>
+                    <option value="7">Curtida </option>
+                    <option value="8">Arrugado</option>
+                    <option value="9">Caída</option>
+                    <option value="10">Vida dura</option>
+                    <option value="11">Antiguo </option>
+                    <option value="12">Retirado</option>
+                    <option value="13">Drogadicto</option>
+                    <option value="14">Geriátrico</option>
+                </select>
+                <button class="arrow right"></button>
+            </div>
+        </div>
+        <div class="slider opacity">
+            <h3 class="header">Opacidad por el envejecimiento</h3>
+            <div class="valuelabel center">50%</div>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <input type="range" min="0" max="100" class="headoverlay" id="age_2" data-index="3">
+                <button class="arrow right"></button>
+            </div>
+        </div>
+    </div>
+    <div class="subgroup">
+        <div class="list">
+            <h3 class="header">Complexion</h3>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <select class="headoverlay" id="complexion_1" data-index="6">
+                    <option value="255" selected="selected">Nada</option>
+                    <option value="0">Mejillas rosadas</option>
+                    <option value="1">Erupción del rastrojo</option>
+                    <option value="2">Sofoco</option>
+                    <option value="3">Quemaduras de sol</option>
+                    <option value="4">Moretones</option>
+                    <option value="5">Alcohólico</option>
+                    <option value="6">Parche</option>
+                    <option value="7">Totem</option>
+                    <option value="8">Vasos sanguíneos</option>
+                    <option value="9">Dañada</option>
+                    <option value="10">Pálido</option>
+                    <option value="11">Fantasmagórico</option>
+                </select>
+                <button class="arrow right"></button>
+            </div>
+        </div>
+        <div class="slider opacity">
+            <h3 class="header">Complexion opacity</h3>
+            <div class="valuelabel center">50%</div>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <input type="range" min="0" max="100" class="headoverlay" id="complexion_2" data-index="6">
+                <button class="arrow right"></button>
+            </div>
+        </div>
+    </div>
+    <div class="subgroup">
+        <div class="list">
+            <h3 class="header">Lunares y pecas</h3>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <!--
+                    NOTE:
+                    Moles & Freckles are a face property which might also affect the body.
+                    Each face option is paired with a body effect (can be 'None').
+
+                    'Body Blemishes' overlay functions support this effect,
+                    they are NOT a separate customization option. 
+
+                    In GTA Online opacity only affects the face part, the body effect is always full
+                    (1.0 opacity) just like for skin blemishes. Similarly to skin blemishes, 
+                    I decided to improve on it and link the opacity slider to both effects.
+
+                    Sadly, I could not determine with 100% accurracy which options are paired up 
+                    with what effect. The pairings data is all based on 'looking and comparing'.
+                -->
+                <select class="headoverlayextra" id="moles_1" data-index="9" data-keyextra="bodyb_1" data-indexextra="11">
+                    <option value="255" data-extra="255" selected="selected">Nada</option>
+                    <option value="0"  data-extra="255">Querubín</option>
+                    <option value="1"  data-extra="10">Por todas partes</option>
+                    <option value="2"  data-extra="11">Irregular</option>
+                    <option value="3"  data-extra="11">Dot Dash</option>
+                    <option value="4"  data-extra="10">Sobre el puente</option>
+                    <option value="5"  data-extra="10">Baby Doll</option>
+                    <option value="6"  data-extra="10">Pixie</option>
+                    <option value="7"  data-extra="10">Besado por el sol</option>
+                    <option value="8"  data-extra="6">Marcas de belleza</option>
+                    <option value="9"  data-extra="1">Alinearse</option>
+                    <option value="10" data-extra="7">Modelesco</option>
+                    <option value="11" data-extra="3">Ocasional</option>
+                    <option value="12" data-extra="9">Moteado </option>
+                    <option value="13" data-extra="1">Gotas de lluvia</option>
+                    <option value="14" data-extra="2">Doble inmersión</option>
+                    <option value="15" data-extra="8">De un solo lado</option>
+                    <option value="16" data-extra="7">Pares</option>
+                    <option value="17" data-extra="2">Crecimiento</option>
+                </select>
+                <button class="arrow right"></button>
+            </div>
+        </div>
+        <div class="slider opacity">
+            <h3 class="header">Opacidad de lunares y pecas</h3>
+            <div class="valuelabel center">50%</div>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <input type="range" min="0" max="100" class="headoverlayextra" id="moles_2" data-index="9" data-keyextra="bodyb_2" data-indexextra="11">
+                <button class="arrow right"></button>
+            </div>
+        </div>
+    </div>
+    <div class="subgroup">
+        <div class="list">
+            <h3 class="header">Daños</h3>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <select class="headoverlay" id="sun_1" data-index="7">
+                    <option value="255" selected="selected">Ninguno</option>
+                    <option value="0">Desigual</option>
+                    <option value="1">Papel de lija</option>
+                    <option value="2">Parche</option>
+                    <option value="3">Áspero </option>
+                    <option value="4">Cuero</option>
+                    <option value="5">Texturizado</option>
+                    <option value="6">Grueso</option>
+                    <option value="7">Rugoso</option>
+                    <option value="8">Arrugado</option>
+                    <option value="9">Agrietado </option>
+                    <option value="10">Arenoso </option>
+                </select>
+                <button class="arrow right"></button>
+            </div>
+        </div>
+        <div class="slider opacity">
+            <h3 class="header">Opacidad del daño</h3>
+            <div class="valuelabel center">50%</div>
+            <div class="controls">
+                <button class="arrow left"></button>
+                <input type="range" min="0" max="100" class="headoverlay" id="sun_2" data-index="7">
+                <button class="arrow right"></button>
+            </div>
+        </div>
+    </div>
+</div>

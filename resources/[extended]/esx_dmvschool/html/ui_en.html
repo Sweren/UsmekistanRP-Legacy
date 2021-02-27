@@ -1,0 +1,122 @@
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<div class="full-screen">
+		<div class="question-container">
+			<!-- header -->
+			<div class="header">
+				<h1>Школа за Шофьорски Курсове</h1>
+			</div>
+			<!-- home -->
+			<div class="body home">
+				<div class="content">
+					<!-- ICI BREVE PRESENTATION -->
+					<center>
+						<img src="dmv.png" class="logo">
+						<br>
+						<p class="bold-text">Добре дошли в шофьорската школа
+					</center>
+					<br>
+					<center>Всички граждани на DarkStreets трябва да положат изпита си, преди да могат да шофират.
+						<br>Отделете време, отговаряйте със здрав разум и не отговаряйте на случаен принцип.
+						<br>
+						<br> Теоритичен Изпит
+						<br> - Изпита по Теория струва 500$ парите не се възтановяват ако не преминете изпита.
+						<br> - Не се страхувайте, шофьорската школа приема кредит, но внимавайте да не изпаднете в дългове.
+						<br> - Ако не преминете курса от първия път, не можете да го направите отново, ще трябва да го направите по-късно
+						date.
+						<br>
+						<br> Практика Изпит
+						<br> - Изпита по шофиране струва 600$, точно както теоретичният изпит, това плащане няма да бъде възстановено, ако не успеете.
+						<br> - Уверете се, че сте нащрек докато шофирате и избягвайте инциденти!</p>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnQuestion">Старт</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Прогрес</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Question-->
+			<div class="body questionnaire-container">
+				<div class="content">
+					<h2 id="questionNumero"></h2>
+					<p id="question"></p>
+					<form class="form" id="question-form">
+						<div>
+							<input type="radio" name="question" id="answerA" value="A">
+							<label class="answerA"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerB" value="B">
+							<label class="answerB"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerC" value="C">
+							<label class="answerC"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerD" value="D">
+							<label class="answerD"></label>
+						</div>
+						<button type="submit" id="submit" class="submit">Следващ въпрос</button>
+					</form>
+				</div>
+				<div class="barre-progression">
+					<h2>Прогрес</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Results -->
+			<div class="body resultGood">
+				<div class="content">
+					<center>
+						<p class="bold-text">Добра работа!</p>
+						<br>
+						<br>Добре сте се справили по време на изпита.
+						<br>
+						<br>Можете да затворите този прозорец и да отидете да си направите пътния тест
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnClose">Затвори</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Progress</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+			<div class="body resultBad">
+				<div class="content">
+					<center>
+						<p class="bold-text">Ти се провали...</p>
+						<br>
+						<br>Не бяхте готови за този тест, опитайте отново по-късно ...
+						<br>
+						<br>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnKick">Затвори</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Прогрес</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="questions.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+
+</body>

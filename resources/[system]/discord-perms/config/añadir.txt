@@ -1,0 +1,12 @@
+#-------------------ADD THAT TO YOUR SERVER.CFG------------------#
+#-----------------WORK WITH STEAM ID OR DISCORD ID---------------#
+
+add_ace CarlosLR-ACadministrator CarlosLR-ACadmin allow
+add_ace CarlosLR-ACmoderator CarlosLR-ACmod allow
+
+add_principal identifier.discord:212257947030388737 CarlosLR-ACadministrator
+add_principal identifier.steam:110000112f089b2 CarlosLR-ACadministrator
+
+
+
+#-----------------------------FOR OPPEN ADMIN MENU PRESS INSERT (INS)-------------------#

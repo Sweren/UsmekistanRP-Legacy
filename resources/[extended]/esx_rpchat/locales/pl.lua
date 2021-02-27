@@ -1,0 +1,15 @@
+Locales['pl'] = {
+	['ooc_help'] = 'fuera de rol',
+	['ooc_prefix'] = 'OOC | %s',
+	['twt_help'] = 'enviar tweet',
+	['twt_prefix'] = '^0[^4Twitter^0] (^5@%s^0)',
+	['me_help'] = 'acto personal',
+	['me_prefix'] = 'me | %s',
+	['do_help'] = 'informar RP',
+	['do_prefix'] = 'do | %s',
+	['news_help'] = 'Anunciar mensajes (no abusar)',
+	['news_prefix'] = 'noticias | %s',
+	['ooc_argument_name'] = 'mensaje',
+	['ooc_argument_help'] = 'mensaje',
+	['ooc_unknown_command'] = '^3%s^0 no es el comando correcto',
+}

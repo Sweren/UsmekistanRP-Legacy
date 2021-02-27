@@ -1,0 +1,27 @@
+Script desarollado por KC SCRIPTS.
+
+Modificado por Wheezy.
+
+Instrucciones de instalacion.
+
+Tienes que ir al resource chat, que esta en la ubicacion (resources/gameplay/chat/cl_chat.lua) y en ese archivo buscar el siguiente codigo:
+
+    if chatInputActivating then
+      if not IsControlPressed(0, 245) then
+        SetNuiFocus(true)
+
+        chatInputActivating = false
+      end
+    end
+	
+Debe quedar el codigo asi:
+
+    if chatInputActivating then
+      if not IsControlPressed(0, 245) then
+	  ExecuteCommand("talk3dchat")
+        SetNuiFocus(true)
+
+        chatInputActivating = false
+      end
+    end
+
