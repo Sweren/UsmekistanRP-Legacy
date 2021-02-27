@@ -1,1 +1,3 @@
-# UsmekistanRP-Legacy
+# Usmekistan Roleplay
+
+### Scripts base
